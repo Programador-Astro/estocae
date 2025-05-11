@@ -1,7 +1,10 @@
 import './style.css'
-import { click } from './engine'
+
 export default function Home(){
+    function click(){
+        console.log('div Clickada')
+    }
     return (
-        <h1 class="hello" onClick={click()}>Hello World</h1>
+        <h1 className="hello" onClick={click}>Hello World</h1>
     )
 }

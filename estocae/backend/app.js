@@ -5,7 +5,6 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var cron = require('node-cron');
 const cors = require('cors');
-require('dotenv').config();
 
 var sequelize = require('./src/db/sequelize'); 
 
@@ -13,6 +12,7 @@ var sequelize = require('./src/db/sequelize');
 const allowedOrigins = ['http://localhost:5500', 'http://127.0.0.1:5500', 'https://www.thunderclient.com'];
 
 const corsOptions = {
+
   origin: function (origin, callback) {
     if (allowedOrigins.includes(origin) || !origin) { // !origin allows requests from same origin (backend)
       callback(null, true);

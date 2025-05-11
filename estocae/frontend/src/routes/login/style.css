@@ -1,0 +1,343 @@
+#info-login{
+    font-size: 12px; 
+    color: #777; 
+    margin-top: 10px;
+}
+#root{
+    width:100%;
+    display:flex;
+    justify-content:  center;
+    align-items: center;
+}
+body {
+    background-image: url('statics/fundo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    display: flex;
+    width: 45%;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 20px 100px rgba(0, 0, 0, 0.3);
+    height: 550px;
+}
+
+.image-side {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-side::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.image-side video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.form.form-side {
+    padding: 0px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.form-side {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 8px 0;
+}
+
+.logo-icon {
+    color: #0a3258;
+    margin-right: 10px;
+    font-size: 28px;
+}
+
+.logo-text {
+    font-family: "Advent Pro", sans-serif;
+    font-size: 40px;
+    padding-left: 8px;
+    font-weight: bold;
+    color: #ff8c38;
+}
+
+.subtitle {
+    color: #9CA3AF;
+    margin-bottom: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.input-group input:focus {
+    border-color: #559cdf;
+    box-shadow: 0 2px 8px rgba(10, 50, 88, 0.15);
+    outline: none;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+}
+
+.remember input {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.remember input:checked {
+    accent-color: #F2994A;
+  }
+
+.forgot a {
+    color: #F2994A;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.forgot a:hover {
+    color: #F2994A;
+    text-decoration: underline;
+}
+
+.login-btn {
+    background: #092C4C;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    letter-spacing: 0.5px;
+}
+
+.login-btn:hover {
+    background: #F2994A;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(10, 50, 88, 0.3);
+}
+
+.login-btn:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 5px rgba(10, 50, 88, 0.2);
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #777;
+    font-size: 14px;
+}
+
+.divider::before, .divider::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #ddd;
+}
+
+.divider::before {
+    margin-right: 10px;
+}
+
+.divider::after {
+    margin-left: 10px;
+}
+
+.social-login {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.social-btn {
+    width: 42px;
+    height: 42px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.social-btn img {
+    width: 20px;
+}
+
+.social-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.register {
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+}
+
+.register a {
+    color: #0a3258;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.register a:hover {
+    color: #1a5387;
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+    }
+
+    .image-side {
+        height: 200px;
+    }
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    animation: modalFadeIn 0.3s;
+}
+
+@keyframes modalFadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.modal-header {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.modal-title {
+    font-size: 20px;
+    color: #092C4C;
+    margin-bottom: 10px;
+}
+
+.modal-subtitle {
+    color: #777;
+    font-size: 14px;
+}
+
+.modal-body {
+    margin-bottom: 20px;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.modal-btn {
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.modal-btn-primary {
+    background-color: #092C4C;
+    color: white;
+    border: none;
+}
+
+.modal-btn-primary:hover {
+    background-color: #0a3a66;
+}
+
+.modal-btn-secondary {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+}
+
+.modal-btn-secondary:hover {
+    background-color: #e0e0e0;
+}

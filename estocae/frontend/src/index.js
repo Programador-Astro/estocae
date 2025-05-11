@@ -1,11 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router";
+// https://reactrouter.com/start/declarative/routing
 import Login from "./routes/login/login"
 import Home from "./routes/home/home"
 import NotMatch from "./routes/notFound/404";
 const root = document.getElementById("root");
-
+// https://reactrouter.com/start/declarative/installation
 ReactDOM.createRoot(root).render(
   <BrowserRouter>
     <Routes>

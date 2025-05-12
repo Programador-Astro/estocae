@@ -10,7 +10,7 @@
     align-items: center;
 }
 body {
-    background-image: url('statics/fundo.jpg');
+    background-image: url('../statics/fundo.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

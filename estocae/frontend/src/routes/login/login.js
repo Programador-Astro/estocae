@@ -1,6 +1,6 @@
  import { FontAwesomeIcon} from '@fortawesome/react-fontawesome'
  //https://create-react-app.dev/docs/adding-images-fonts-and-files/
- import logo from './statics/logo.svg'
+ import logo from '../statics/logo.svg'
  import {faGoogle, faFacebook, faMicrosoft} from '@fortawesome/free-brands-svg-icons'
 //  https://www.reddit.com/r/reactjs/comments/ui4zmx/cant_play_video_file/
  import {VideoPlayer} from './src/VideoPlayer'
@@ -38,7 +38,7 @@ export default function Login(){
                     </div>
 
                     <div className="forgot">
-                        <a href="#" id="forgotPasswordLink">Esqueceu a senha?</a>
+                        <a href="/recuperarSenha" id="forgotPasswordLink">Esqueceu a senha?</a>
                     </div>
 
                 </div>

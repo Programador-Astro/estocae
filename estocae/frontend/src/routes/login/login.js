@@ -1,6 +1,6 @@
  import { FontAwesomeIcon} from '@fortawesome/react-fontawesome'
  //https://create-react-app.dev/docs/adding-images-fonts-and-files/
- import logo from '../statics/logo.svg'
+ import {ReactComponent as Logo } from '../statics/logo.svg'
  import {faGoogle, faFacebook, faMicrosoft} from '@fortawesome/free-brands-svg-icons'
 //  https://www.reddit.com/r/reactjs/comments/ui4zmx/cant_play_video_file/
  import {VideoPlayer} from './src/VideoPlayer'
@@ -17,7 +17,7 @@ export default function Login(){
         </div>
         <div className="form-side">
             <div class="logo">
-                <img src={logo} alt=""/>
+                <Logo/>
                 <div className="logo-text">Estocaê</div>
             </div>
             <div className="subtitle">Controle de Estoque Inteligente</div>
